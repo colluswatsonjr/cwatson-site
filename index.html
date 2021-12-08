@@ -9,56 +9,91 @@
     <link rel="stylesheet" href="style.css">
     <!-- Add social media icons link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header id='header'>
-        <nav>
-            <div class="navLogo">
-                <img src="images/nameLogo2.jpg" alt="logo">
-            </div>
-            <div class="navMenu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#connect">Connect</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id='about'>
-        <h2 class="title">Hey, I'm Collus Watson.</h2>
-        <img class="aboutImg" src="" alt="">
-        <p class='aboutContent'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eum et architecto
-            repellendus
-            quam minima blanditiis minus culpa, recusandae illo alias nostrum. Suscipit delectus ex minima id eaque
-            fugiat a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa in ullam iure voluptas, fugit eius
-            enim maiores omnis quis, tenetur cupiditate vel molestias quisquam esse iste earum magnam aperiam
-            recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt impedit ipsa porro atque vel,
-            sed aspernatur provident eveniet delectus quod. Architecto impedit eveniet cumque, temporibus asperiores
-            neque repellat facere aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam quis ipsa at
-            quibusdam minus, et harum placeat expedita ducimus, repudiandae omnis obcaecati veritatis temporibus rem
-            animi? Ducimus animi aut laborum?</p>
-    </section>
-    <section id='work'>
+    <nav id="navigation">
+        <ul class="navBar">
+            <li><a class="navItem navHome" href="#">
+                    Home
+                </a></li>
+            <li><a class="navItem navAbout" href="#blog">
+                    Blog
+                </a></li>
+            <li><a class="navItem navWork" href="#work">
+                    Work
+                </a></li>
+            <!-- <li class="navItem resume"><a href="#resume">Resume</a></li> -->
+            <!-- <li class="navItem navConnect"><a href="#connect">Connect</a></li> -->
+            <li><a class="navItem navEmail" href="mailto:cklwatsonjr@gmail.com">
+                    EMAIL!
+                </a></li>
+        </ul>
+    </nav>
 
-        <h2 class="title">My Work</h2>
-        <ul id="workContent">
-            <li><img class="workImg" src="images/beach.png" alt=""></li>
-            <li><img class="workImg" src="images/beach3.jpg" alt=""></li>
-            <li><img class="workImg" src="images/lights.png" alt=""></li>
-            <li><img class="workImg" src="images/mountain.png" alt=""></li>
-        </ul>
+    <section id="intro">
+        <img class="introImg" src="./images/collus1.JPG" alt="personal image">
+        <article class="introArticle">
+            <h2 class="introTitle title">Hello, I'm Collus Watson</h2>
+            <p class="introContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, at.
+                Incidunt quae
+                aliquam cupiditate omnis hic minima repudiandae dolorem animi aspernatur voluptates eligendi
+                quibusdam
+                exercitationem, provident magni nesciunt quis quam!
+            </p>
+        </article>
     </section>
-    <section id="connect">
-        <h2 class="title">Contact Me</h2>
-        <ul class="socialLinks">
-            <li class="connectSocial"><a href="https://www.linkedin.com/in/collus-watson-165670213/" class="fa fa-linkedin socialLink fa-3x"></a></li>
-            <li class="connectSocial"><a href="https://github.com/colluswatsonjr" class="fa fa-github socialLink fa-3x"></a></li>
-            <li class="connectSocial"><a href="https://www.instagram.com/watsupnxt/" class="fa fa-instagram socialLink fa-3x"></a></li>
-            <li class="connectSocial"><a href="https://twitter.com/watsupnxt" class="fa fa-twitter socialLink fa-3x"></a></li>
-        </ul>
+
+    <section id="projects">
+        <div class="project"><p>project being built...</p><a href=""></a></div>
+        <div class="project"><p>project being built...</p><a href=""></a></div>
+        <div class="project"><p>project being built...</p><a href=""></a></div>
+        <div class="project"><p>project being built...</p><a href=""></a></div>
+        <div class="project"><p>project being built...</p><a href=""></a></div>
+        <div class="project"><p>project being built...</p><a href=""></a></div>
     </section>
+
+    <section id="blogs">
+        <div class="blog">
+            <h3 class="blogTitle">blog coming soon...</h3>
+            <a class="blogLink" href="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, placeat nobis facilis nostrum,
+                    impedit eveniet aliquam distinctio maxime itaque, sequi voluptatum tenetur quis iste. At earum
+                    fugiat eveniet tempora optio.</p><img src="" alt="" class="blogImg">
+            </a>
+        </div>
+        <div class="blog">
+            <h3 class="blogTitle">blog coming soon...</h3>
+            <a class="blogLink" href="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, placeat nobis facilis nostrum,
+                    impedit eveniet aliquam distinctio maxime itaque, sequi voluptatum tenetur quis iste. At earum
+                    fugiat eveniet tempora optio.</p><img src="" alt="" class="blogImg">
+            </a>
+        </div>
+        <div class="blog">
+            <h3 class="blogTitle">blog coming soon...</h3>
+            <a class="blogLink" href="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, placeat nobis facilis nostrum,
+                    impedit eveniet aliquam distinctio maxime itaque, sequi voluptatum tenetur quis iste. At earum
+                    fugiat eveniet tempora optio.</p><img src="" alt="" class="blogImg">
+            </a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <ul class="footerLinks">
+            <li><a href="https://www.linkedin.com/in/collus-watson-165670213/" class="fa fa-linkedin socialLink fa"></a>
+            </li>
+            <li><a href="https://github.com/colluswatsonjr" class="fa fa-github socialLink fa"></a></li>
+            <li><a href="https://www.instagram.com/watsupnxt/" class="fa fa-instagram socialLink fa"></a></li>
+            <li><a href="https://twitter.com/watsupnxt" class="fa fa-twitter socialLink fa"></a></li>
+        </ul>
+        <p>&copy;<span id="copyright-year">2020</span></p>
+    </footer>
+
+
 
     <script src="script.js"></script>
 </body>
