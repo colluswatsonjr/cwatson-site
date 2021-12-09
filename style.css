@@ -13,6 +13,7 @@
 body {
     background: #D0CAB2;
     margin: 0;
+    background-image: linear-gradient(#D0CAB2,#89B5AF, #89B5AF ,#89B5AF,#D0CAB2);
 
 }
 
@@ -23,8 +24,8 @@ body {
     justify-content: flex-end;
     list-style: none;
     margin: 0; 
-    background: #96C7C1;
-    background-image: linear-gradient(#96C7C1, #D0CAB2);
+    /* background: #96C7C1; */
+    /* background-image: linear-gradient(#96C7C1, #D0CAB2); */
 }
   
 .navBar a {
@@ -36,8 +37,10 @@ body {
   
 .navBar a:hover {
     background-image: linear-gradient(#89B5AF, #D0CAB2);
+
     /* background: #89B5AF; */
 }
+
 
 @media all and (max-width: 800px) {
     .navBar {
@@ -62,16 +65,17 @@ body {
 
 /* INTRO */
 #intro{
-    border: 3px solid black;
+    /* border: 3px solid black; */
     display: flex;
+    align-content: space-around;
     padding: 1%;
-    background-image: linear-gradient(#D0CAB2,#96C7C1,#D0CAB2 );
+    /* background-image: linear-gradient(#D0CAB2,#96C7C1,#D0CAB2 ); */
 
 }
 .introImg{
     /* background-image: url("./images/collus1.JPG"); */
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     flex: 1;
 }
 @media all and (max-width: 900px){
@@ -82,33 +86,28 @@ body {
 }
 
 @media all and (max-width: 500px){
-    /* #intro{
-    flex-flow: column;
-} */
     .introImg{
         display: none;
     }
-    /* .introArticle{
-        flex: 1;
-    } */
+}
+
+.introContent{
+    font-size: large;
 }
 
 .introArticle{
-    background-color: deepskyblue;
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 3;
     padding: 1%;
 }
 .introTitle{
-    background-color: cyan;
     flex: 1;
     text-align: center;
     padding: 1%;
 
 }
 .introContent{
-    background-color: darkorange;
     flex: 9;
     padding: 1%;
     margin: auto;
@@ -118,24 +117,22 @@ body {
 
 /* PROJECTS */
 #projects{
-    background-image: linear-gradient(#D0CAB2,#96C7C1,#D0CAB2 );
-
-    border: 3px solid black;
     display: flex;
     padding: 1%;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px 20px;
 }
 .project{
-    border: 2px solid springgreen;
     width: 150px;
     height: 100px;
-    background-color: cadetblue;
+    background-color: #DED9C4;
+    border: 3px solid #96C7C1;
 }
 @media all and (max-width: 500px){
     #projects{
-        flex-direction: column;
+        flex-direction: column wrap;
         gap: 20px 20px;
     }
 }
@@ -143,34 +140,33 @@ body {
 
 /* BLOGS */
 #blogs{
-    background-image: linear-gradient(#D0CAB2,#96C7C1,#D0CAB2 );
-
-    border: 3px solid black;
+    display: flex;
     padding: 1%;
-
+    justify-content: space-around;
 }
 .blog{
-    background-color: #dfdfdf;
-    border: 2px solid red;
+    background-color: #DED9C4;
+    border: 3px solid #96C7C1;
     box-sizing: border-box;
     padding: 1%;
     flex-basis: 30%;
 }
+.blog a p{
+    color: black;
+}
 /* when screen has a min width of 900px add these properties */
-@media (min-width: 900px){
+@media (max-width: 900px){
     #blogs{
-        display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        gap: 20px;
+
     }
 }
-
 
 
 /* FOOTER */
 footer{
     text-align: center;
-    background-image: linear-gradient(#D0CAB2,#96C7C1 );
-
 }
 footer ul{
     padding: 0;
@@ -178,4 +174,8 @@ footer ul{
 .footerLinks li{
     display: inline-block;
     padding: 6px;
+
+}
+.footerLinks li a{
+    color: black;
 }
